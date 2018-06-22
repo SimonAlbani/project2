@@ -4,6 +4,6 @@ module.exports = function recipeModel(sequelize, DataTypes) {
     cookingTime: DataTypes.INTEGER,
     prepTime: DataTypes.INTEGER,
     instructions: DataTypes.STRING,
-    ingredients: DataTypes.ID
+    ingredientsId: DataTypes.INTEGER
   });
 };

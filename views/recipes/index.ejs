@@ -1,0 +1,8 @@
+<%- include('../partials/header.ejs') %>
+
+    <% recipes.forEach((recipe) => { %>
+        <a href="/recipe/<%= recipe.id %>">
+            Recipe name:
+            <%= recipe.recipeName %>
+                <% }) %>
+                    <%- include('../partials/footer.ejs') %>
