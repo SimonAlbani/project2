@@ -1,0 +1,31 @@
+body {
+  background-color: lemonchiffon;
+  color: orangered;
+  font-family: "Bungee Shade", cursive;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+a:visited {
+  color: orangered;
+}
+
+.recipe-card {
+  background-image: url("/images/recipecard.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+ul {
+    list-style: square inside;
+    list-style-position: inside;
+}
+
+li {
+    font-size: 10px;
+}

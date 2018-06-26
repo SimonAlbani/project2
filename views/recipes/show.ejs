@@ -1,3 +1,35 @@
 <%- include('../partials/header.ejs') %>
+    <div class="recipe-card">
+        <h2>
+            <%= recipe.recipeName %>
+        </h2>
+        <p>Cooking Time:
+            <%= recipe.cookingTime %>
+        </p>
+        <p>Prep Time:
+            <%= recipe.prepTime %>
+        </p>
+        <p>Ingredients:</p>
+        <% recipe.ingredients.forEach(ingredient => { %>
+            <ul>
+                <li>
+                    <a href="/recipe/<%= recipe.id %>/ingredients/<%= ingredient.id %>">
+                        <%= ingredient.ingredientName %>
+                    </a>
+                    <%= ingredient.amount %>
+                </li>
+            </ul>
+            <% }) %>
+                <p>Instructions:
+                    <%= recipe.instructions %>
+                </p>
+    </div>
+    <p>
+        <a href="/recipe/<%= recipe.id %>/ingredients/new">Add Ingredients</a>
+    </p>
+    <p>
+        <a class="edit" href="/edit/<%= recipe.id %>"> Edit Recipe </a>
+    </p>
+
 
 <%- include('../partials/footer.ejs') %>

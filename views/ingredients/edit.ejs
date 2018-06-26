@@ -1,3 +1,18 @@
 <%- include('../partials/header.ejs') %>
+    <div class="recipe-card">
+        <form class="form-edit" action="/recipe/<%= ingredient.recipe.id %>/ingredients/<%= ingredient.id %>?_method=put" method="post">
+            <p>Ingredient Name:</p>
+            <input type="text" value="<%= ingredient.ingredientName %>" placeholder="<%= ingredient.ingredientName %>" name="recipeName"
+            />
+            <p>Amount:</p>
+            <input type="text" value="<%= ingredient.amount %>" placeholder="<%= ingredient.amount %>" name="amount" />
+            <p>
+                <input type="submit" id="submit">
+            </p>
+        </form>
+        <form action="/recipe/<%= ingredient.recipe.id %>/ingredients/<%= ingredient.id %>?_method=delete" method="post">
+            <input class="button" type="submit" value="Remove">
+        </form>
+    </div>
 
 <%- include('../partials/footer.ejs') %>

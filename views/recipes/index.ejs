@@ -1,8 +1,17 @@
 <%- include('../partials/header.ejs') %>
-
-    <% recipes.forEach((recipe) => { %>
-        <a href="/recipe/<%= recipe.id %>">
-            Recipe name:
-            <%= recipe.recipeName %>
-                <% }) %>
-                    <%- include('../partials/footer.ejs') %>
+    <div class="recipe-card">
+        <% recipes.forEach((recipe) => { %>
+            <ul>
+                <li>
+                    <a href="/recipe/<%= recipe.id %>">
+                        Recipe name:
+                        <%= recipe.recipeName %>
+                    </a>
+                </li>
+            </ul>
+            <% }) %>
+                <p>
+                    <a href="/recipes/new">Add a Recipe</a>
+                </p>
+    </div>
+<%- include('../partials/footer.ejs') %>

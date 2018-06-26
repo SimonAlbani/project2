@@ -1,3 +1,21 @@
 <%- include('../partials/header.ejs') %>
-
+    <h2>Edit The Recipe</h2>
+    <div class="recipe-card">
+        <form class="form-edit" action="/recipe/<%= recipe.id %>?_method=put" method="post">
+            <p>Recipe Name:</p>
+            <input type="text" value="<%= recipe.recipeName %>" placeholder="<%= recipe.recipeName %>" name="recipeName" />
+            <p>Cook Time:</p>
+            <input type="text" value="<%= recipe.cookingTime %>" placeholder="<%= recipe.cookingTime %>" name="cookingTime" />
+            <p>Prep Time:</p>
+            <input type="text" value="<%= recipe.prepTime %>" placeholder="<%= recipe.prepTime %>" name="prepTime" />
+            <p>Instructions:</p>
+            <input type="text" value="<%= recipe.instructions %>" placeholder="<%= recipe.instructions %>" name="instructions" />
+            <div class="recipe-card"></div>
+            <p>
+                <input type="submit" id="submit">
+            </p>
+        </form>
+        <form action="/recipe/<%= recipe.id %>?_method=delete" method="post">
+            <input class="button" type="submit" value="Remove">
+        </form>
 <%- include('../partials/footer.ejs') %>

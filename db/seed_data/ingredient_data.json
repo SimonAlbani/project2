@@ -1,7 +1,47 @@
 [
   {
     "ingredientName": "flour",
-    "amount": 4,
+    "amount": "4 cups",
     "recipeId": 1
+  },
+  {
+    "ingredientName": "eggs",
+    "amount": "3 pounds",
+    "recipeId": 1
+  },
+  {
+    "ingredientName": "sugar",
+    "amount": "6 oz.",
+    "recipeId": 1
+  },
+  {
+    "ingredientName": "cream cheese",
+    "amount": "4 tsp.",
+    "recipeId": 2
+  },
+  {
+    "ingredientName": "sour cream",
+    "amount": "3 cups",
+    "recipeId": 2
+  },
+  {
+    "ingredientName": "brown sugar",
+    "amount": "6 pounds",
+    "recipeId": 2
+  },
+  {
+    "ingredientName": "all purpouse flour",
+    "amount": "4 pounds",
+    "recipeId": 3
+  },
+  {
+    "ingredientName": "quail eggs",
+    "amount": "3 pounds",
+    "recipeId": 3
+  },
+  {
+    "ingredientName": "white sugar",
+    "amount": "6 pounds",
+    "recipeId": 3
   }
 ]

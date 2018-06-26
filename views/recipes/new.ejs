@@ -1,3 +1,11 @@
 <%- include('../partials/header.ejs') %>
-
+    <div class="recipe-card">
+        <form action="/" method="post">
+            <input type="text" value="" placeholder="Recipe name" name="recipeName" required/>
+            <input type="text" value="" placeholder="Cooking Time" name="cookingTime" required/>
+            <input type="text" value="" placeholder="Prep Time" name="prepTime" required/>
+            <input type="text" value="" placeholder="instructions" name="instructions" required/>
+            <input type="submit" id="submit">
+        </form>
+    </div>
 <%- include('../partials/footer.ejs') %>

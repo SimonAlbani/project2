@@ -4,7 +4,27 @@
     "cookingTime": 30,
     "prepTime": 20,
     "instructions":
-      "Kombucha +1 waistcoat succulents. Authentic photo booth copper mug plaid sriracha lyft brunch gentrify la croix thundercats taiyaki flexitarian pickled. ",
-    "ingredientsId": 4
+      "Kombucha +1 waistcoat succulents. Authentic photo booth copper mug plaid sriracha lyft brunch gentrify la croix thundercats taiyaki flexitarian pickled. "
+  },
+  {
+    "recipeName": "cookies",
+    "cookingTime": 74,
+    "prepTime": 15,
+    "instructions":
+      "Kombucha +1 waistcoat succulents. Authentic photo booth copper mug plaid sriracha lyft brunch gentrify la croix thundercats taiyaki flexitarian pickled. "
+  },
+  {
+    "recipeName": "brownies",
+    "cookingTime": 80,
+    "prepTime": 60,
+    "instructions":
+      "Kombucha +1 waistcoat succulents. Authentic photo booth copper mug plaid sriracha lyft brunch gentrify la croix thundercats taiyaki flexitarian pickled. "
+  },
+  {
+    "recipeName": "cake",
+    "cookingTime": 70,
+    "prepTime": 5,
+    "instructions":
+      "Kombucha +1 waistcoat succulents. Authentic photo booth copper mug plaid sriracha lyft brunch gentrify la croix thundercats taiyaki flexitarian pickled. "
   }
 ]
