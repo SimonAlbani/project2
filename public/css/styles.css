@@ -189,3 +189,9 @@ header {
 .v:hover {
   color: rgba(238, 130, 238, 1);
 }
+
+@media screen and (min-width: 480px) {
+  body {
+      background-color: lightgreen;
+  }
+}
