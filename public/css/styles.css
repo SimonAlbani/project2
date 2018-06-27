@@ -204,4 +204,9 @@ header {
     font-size: 30px;
     width: auto;
   }
+
+  .chocolatecake,
+.recipe-card {
+  width: 480px;
+}
 }
