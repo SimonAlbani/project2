@@ -141,7 +141,7 @@ header {
 
 @keyframes r {
   from {
-    color: rgba(255, 0, 0, .5);
+    color: rgba(255, 0, 0, .1);
   }
   to {
     color: rgba(255, 0, 0, 1);
@@ -154,7 +154,7 @@ header {
 
 @keyframes o {
   from {
-    color: rgba(255, 165, 0, 0.5);
+    color: rgba(255, 165, 0, 0.1);
   }
   to {
     color: rgba(255, 165, 0, 1);
@@ -175,7 +175,7 @@ header {
 
 @keyframes y {
   from {
-    color: rgba(255, 255, 0, 0.5);
+    color: rgba(255, 255, 0, 0.1);
   }
   to {
     color: rgba(255, 255, 0, 1);
@@ -196,7 +196,7 @@ header {
 
 @keyframes g {
   from {
-    color: rgba(0, 128, 0, 0.5);
+    color: rgba(0, 128, 0, 0.1);
   }
   to {
     color: rgba(0, 128, 0, 1);
@@ -217,7 +217,7 @@ header {
 
 @keyframes b {
   from {
-    color: rgba(0, 0, 255, 0.5);
+    color: rgba(0, 0, 255, 0.1);
   }
   to {
     color: rgba(0, 0, 255, 1);
@@ -238,7 +238,7 @@ header {
 
 @keyframes i {
   from {
-    color: rgba(75, 0, 130, 0.5);
+    color: rgba(75, 0, 130, 0.1);
   }
   to {
     color: rgba(75, 0, 130, 1);
@@ -259,7 +259,7 @@ header {
 
 @keyframes v {
   from {
-    color: rgba(238, 130, 238, 0.5);
+    color: rgba(238, 130, 238, 0.1);
   }
   to {
     color: rgba(238, 130, 238, 1);
