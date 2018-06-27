@@ -71,6 +71,7 @@ a {
 }
 
 input,
+.input,
 .submit {
   background-color: hotpink;
   border: solid powderblue 6px;
@@ -141,7 +142,7 @@ header {
 
 @keyframes r {
   from {
-    color: rgba(255, 0, 0, .1);
+    color: rgba(255, 0, 0, 0.1);
   }
   to {
     color: rgba(255, 0, 0, 1);
@@ -246,7 +247,7 @@ header {
 }
 
 .i {
-  animation: i .5s infinite alternate;
+  animation: i 0.5s infinite alternate;
 }
 
 /* .i {
@@ -280,13 +281,14 @@ header {
 
 @media screen and (max-width: 480px) {
   body {
-      max-width: 480px;
+    max-width: 480px;
   }
 
-  .chocolatecake, .recipe-card {
+  .chocolatecake,
+  .recipe-card {
     background-image: none;
   }
-  
+
   header {
     font-size: 26px;
     width: auto;
@@ -294,25 +296,27 @@ header {
   }
 
   .chocolatecake,
-.recipe-card {
-  width: 480px;
-}
+  .recipe-card {
+    width: 480px;
+  }
 
-li, footer, .recipes {
-  font-size: 25px;
-}
+  li,
+  footer,
+  .recipes {
+    font-size: 25px;
+  }
 
-h2 {
-  padding-top: 50px;
-  font-size: 50px;
-}
+  h2 {
+    padding-top: 50px;
+    font-size: 50px;
+  }
 
-footer {
-  word-spacing: 1px;
-  width: 480px;
-}
+  footer {
+    word-spacing: 1px;
+    width: 480px;
+  }
 
-a:hover {
-  color: lightgreen;
-}
+  a:hover {
+    color: lightgreen;
+  }
 }
