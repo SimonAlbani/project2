@@ -194,37 +194,89 @@ header {
   color: rgba(255, 255, 0, 1);
 } */
 
+@keyframes g {
+  from {
+    color: rgba(0, 128, 0, 0.5);
+  }
+  to {
+    color: rgba(0, 128, 0, 1);
+  }
+}
+
 .g {
+  animation: g 1.5s infinite alternate;
+}
+
+/* .g {
   color: rgba(0, 128, 0, 0.5);
 }
 
 .g:hover {
   color: rgba(0, 128, 0, 1);
+} */
+
+@keyframes b {
+  from {
+    color: rgba(0, 0, 255, 0.5);
+  }
+  to {
+    color: rgba(0, 0, 255, 1);
+  }
 }
 
 .b {
+  animation: b 2.5s infinite alternate;
+}
+
+/* .b {
   color: rgba(0, 0, 255, 0.5);
 }
 
 .b:hover {
   color: rgba(0, 0, 255, 1);
+} */
+
+@keyframes i {
+  from {
+    color: rgba(75, 0, 130, 0.5);
+  }
+  to {
+    color: rgba(75, 0, 130, 1);
+  }
 }
 
 .i {
+  animation: i .5s infinite alternate;
+}
+
+/* .i {
   color: rgba(75, 0, 130, 0.5);
 }
 
 .i:hover {
   color: rgba(75, 0, 130, 1);
+} */
+
+@keyframes v {
+  from {
+    color: rgba(238, 130, 238, 0.5);
+  }
+  to {
+    color: rgba(238, 130, 238, 1);
+  }
 }
 
 .v {
+  animation: v 2.7s infinite alternate;
+}
+
+/* .v {
   color: rgba(238, 130, 238, 0.5);
 }
 
 .v:hover {
   color: rgba(238, 130, 238, 1);
-}
+} */
 
 @media screen and (max-width: 480px) {
   body {
