@@ -190,8 +190,9 @@ header {
   color: rgba(238, 130, 238, 1);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
       background-color: lightgreen;
+      max-width: 480px;
   }
 }
