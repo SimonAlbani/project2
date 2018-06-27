@@ -92,6 +92,11 @@ textarea {
   font-family: "Galada", cursive;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
 .recipes {
   font-size: 20px;
 }
