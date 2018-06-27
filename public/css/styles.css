@@ -71,7 +71,6 @@ a {
 }
 
 input,
-textarea,
 .submit {
   background-color: hotpink;
   border: solid powderblue 6px;
@@ -80,7 +79,7 @@ textarea,
   font-family: "Galada", cursive;
 }
 
-input,
+textarea, input,
 .submit:hover {
   border: solid 6px hotpink;
   background-color: powderblue;
