@@ -182,17 +182,17 @@ header {
   }
 }
 
-/* .y {
+.y {
   animation: y 1s infinite alternate;
 }
 
-.y {
+/* .y {
   color: rgba(255, 255, 0, 0.5);
-} */
+}
 
 .y:hover {
   color: rgba(255, 255, 0, 1);
-}
+} */
 
 .g {
   color: rgba(0, 128, 0, 0.5);
