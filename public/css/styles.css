@@ -208,4 +208,18 @@ header {
 .recipe-card {
   width: 480px;
 }
+
+li, footer, .recipes {
+  font-size: 25px;
+}
+
+h2 {
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+footer {
+  word-spacing: 1px;
+  width: 480px;
+}
 }
