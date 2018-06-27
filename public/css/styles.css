@@ -139,13 +139,26 @@ header {
   }
 }
 
-.r {
+@keyframes roy {
+  from {
+    color: rgba(255, 0, 0, .5);
+  }
+  to {
+    color: rgba(255, 0, 0, 1);
+  }
+}
+
+r {
+  animation: roy 3s infinite alternate;
+}
+
+/* .r {
   color: rgba(255, 0, 0, 0.5);
 }
 
 .r:hover {
   color: rgba(255, 0, 0, 1);
-}
+} */
 
 .o {
   color: rgba(255, 165, 0, 0.5);
