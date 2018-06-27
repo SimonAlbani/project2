@@ -25,9 +25,17 @@ router.post("/", (req, res) => {
   });
 });
 
+// router.get("/recipe/:id", (req, res) => {
+//   Recipe.findById(req.params.id, queryOptions).then(recipe => {
+//     res.render("recipes/show", { recipe, queryOptions });
+//   });
+// });
+
 router.get("/recipe/:id", (req, res) => {
-  Recipe.findById(req.params.id, queryOptions).then(recipe => {
-    res.render("recipes/show", { recipe, queryOptions });
+  Recipe.findById(req.params.id).then(recipe => {
+    Ingredient.findAll().then(ingredients => {
+      res.render("recipes/show", { recipe, ingredients });
+    });
   });
 });
 
