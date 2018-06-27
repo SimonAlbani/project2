@@ -133,3 +133,59 @@ header {
     color: hotpink;
   }
 }
+
+.r {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+.r:hover {
+  color: rgba(255, 0, 0, 1);
+}
+
+.o {
+  color: rgba(255, 165, 0, 0.5);
+}
+
+.o:hover {
+  color: rgba(255, 165, 0, 1);
+}
+
+.y {
+  color: rgba(255, 255, 0, 0.5);
+}
+
+.y:hover {
+  color: rgba(255, 255, 0, 1);
+}
+
+.g {
+  color: rgba(0, 128, 0, 0.5);
+}
+
+.g:hover {
+  color: rgba(0, 128, 0, 1);
+}
+
+.b {
+  color: rgba(0, 0, 255, 0.5);
+}
+
+.b:hover {
+  color: rgba(0, 0, 255, 1);
+}
+
+.i {
+  color: rgba(75, 0, 130, 0.5);
+}
+
+.i:hover {
+  color: rgba(75, 0, 130, 1);
+}
+
+.v {
+  color: rgba(238, 130, 238, 0.5);
+}
+
+.v:hover {
+  color: rgba(238, 130, 238, 1);
+}
