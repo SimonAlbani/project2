@@ -27,7 +27,7 @@ router.post("/", (req, res) => {
 
 router.get("/recipe/:id", (req, res) => {
   Recipe.findById(req.params.id, queryOptions).then(recipe => {
-    res.render("recipes/show", { recipe });
+    res.render("recipes/show", { recipe, queryOptions });
   });
 });
 
