@@ -223,4 +223,8 @@ footer {
   word-spacing: 1px;
   width: 480px;
 }
+
+a:hover {
+  color: lightgreen;
+}
 }
