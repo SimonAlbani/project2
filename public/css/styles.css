@@ -71,7 +71,7 @@ a {
 }
 
 input,
-.input,
+textarea,
 .submit {
   background-color: hotpink;
   border: solid powderblue 6px;
