@@ -52,9 +52,9 @@ footer {
   padding: 20px;
   font-size: 25px;
   word-spacing: 3.5px;
-  border-top: solid powderblue 6px;
+  border-top: solid rgb(20, 207, 231) 6px;
   width: 100%;
-  background-color: rgba(0, 0, 0, .5),
+  background-color: powderblue;
   bottom: 0;
 }
 
