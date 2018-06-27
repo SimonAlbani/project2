@@ -79,10 +79,15 @@ input,
   font-family: "Galada", cursive;
 }
 
-textarea, input,
+textarea,
+input,
 .submit:hover {
   border: solid 6px hotpink;
   background-color: powderblue;
+}
+
+textarea {
+  width: 500px;
 }
 
 .recipes {
@@ -165,14 +170,6 @@ header {
   animation: o 2s infinite alternate;
 }
 
-/* .o {
-  color: rgba(255, 165, 0, 0.5);
-}
-
-.o:hover {
-  color: rgba(255, 165, 0, 1);
-} */
-
 @keyframes y {
   from {
     color: rgba(255, 255, 0, 0.1);
@@ -185,14 +182,6 @@ header {
 .y {
   animation: y 1s infinite alternate;
 }
-
-/* .y {
-  color: rgba(255, 255, 0, 0.5);
-}
-
-.y:hover {
-  color: rgba(255, 255, 0, 1);
-} */
 
 @keyframes g {
   from {
@@ -207,14 +196,6 @@ header {
   animation: g 1.5s infinite alternate;
 }
 
-/* .g {
-  color: rgba(0, 128, 0, 0.5);
-}
-
-.g:hover {
-  color: rgba(0, 128, 0, 1);
-} */
-
 @keyframes b {
   from {
     color: rgba(0, 0, 255, 0.1);
@@ -227,14 +208,6 @@ header {
 .b {
   animation: b 2.5s infinite alternate;
 }
-
-/* .b {
-  color: rgba(0, 0, 255, 0.5);
-}
-
-.b:hover {
-  color: rgba(0, 0, 255, 1);
-} */
 
 @keyframes i {
   from {
@@ -249,14 +222,6 @@ header {
   animation: i 0.5s infinite alternate;
 }
 
-/* .i {
-  color: rgba(75, 0, 130, 0.5);
-}
-
-.i:hover {
-  color: rgba(75, 0, 130, 1);
-} */
-
 @keyframes v {
   from {
     color: rgba(238, 130, 238, 0.1);
@@ -269,14 +234,6 @@ header {
 .v {
   animation: v 2.7s infinite alternate;
 }
-
-/* .v {
-  color: rgba(238, 130, 238, 0.5);
-}
-
-.v:hover {
-  color: rgba(238, 130, 238, 1);
-} */
 
 @media screen and (max-width: 480px) {
   body {
