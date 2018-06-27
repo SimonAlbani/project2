@@ -200,4 +200,8 @@ header {
     background-image: none;
   }
   
+  header {
+    font-size: 30px;
+    width: auto;
+  }
 }
