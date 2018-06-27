@@ -1,7 +1,12 @@
 <%- include('../partials/header.ejs') %>
-    <form action="/recipe/<%= ingredient.id %>" method="post">
-        <input type="text" value="" placeholder="ingredient" name="ingredientName" required/>
-        <input type="text" value="" placeholder="amount" name="amount" required/>
-        <input type="submit" id="submit">
-    </form>
+    <div class="chocolatecake">
+        <div class="recipecontainer"></div>
+        <h2>Add an Ingredient</h2>
+        <form action="/recipe/<%= ingredient.id %>" method="post">
+            <input type="text" value="" placeholder="ingredient" name="ingredientName" required/>
+            <input type="text" value="" placeholder="amount" name="amount" required/>
+            <input type="submit" class="submit">
+        </form>
+    </div>
+    </div>
 <%- include('../partials/footer.ejs') %>

@@ -1,9 +1,11 @@
 <%- include('../partials/header.ejs') %>
+<div class="recipe-card chocolatecake">
         <h2>
             <%= ingredient.ingredientName %>
         </h2>
         <p>Amount:
             <%= ingredient.amount %>
         </p>
-    <a href="/recipe/<%= ingredient.recipe.id %>/ingredients/<%= ingredient.id %>/edit">Edit Ingredients</a>
+    <a class="submit" href="/recipe/<%= ingredient.recipe.id %>/ingredients/<%= ingredient.id %>/edit">Edit Ingredients</a>
+</div>
 <%- include('../partials/footer.ejs') %>

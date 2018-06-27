@@ -1,8 +1,7 @@
 body {
-  background-color: lemonchiffon;
-  color: orangered;
-  font-family: "Bungee Shade", cursive;
-  font-weight: bold;
+  background-color: hotpink;
+  color: rgb(20, 207, 231);
+  font-family: "Galada", cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,22 +9,127 @@ body {
   text-align: center;
 }
 
-a:visited {
-  color: orangered;
+a:visited,
+a {
+  color: rgb(20, 207, 231);
+}
+
+a:hover {
+  color: hotpink;
+}
+
+.chocolatecake,
+.recipe-card {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 900px;
+  width: 1080px;
+}
+
+.chocolatecake {
+  background-image: url("/images/chocolatecake.jpg");
 }
 
 .recipe-card {
   background-image: url("/images/recipecard.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: 100%;
 }
 
 ul {
-    list-style: square inside;
-    list-style-position: inside;
+  list-style: inside;
 }
 
 li {
-    font-size: 10px;
+  font-size: 15px;
+  margin: -8px;
+}
+
+h2 {
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+footer {
+  padding: 20px;
+  font-size: 25px;
+  word-spacing: 3.5px;
+  border-top: solid powderblue 6px;
+  width: 100%;
+}
+
+.edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+.submit {
+  background-color: hotpink;
+  border: solid powderblue 6px;
+  padding: 6px;
+  margin: 10px;
+  font-family: "Galada", cursive;
+}
+
+input,
+.submit:hover {
+  border: solid 6px hotpink;
+  background-color: powderblue;
+}
+
+.recipes {
+  font-size: 20px;
+}
+
+.instructions {
+  padding-left: 50px;
+  width: 90%;
+  text-align: left;
+}
+
+header {
+  font-size: 60px;
+  background-color: hotpink;
+  border: solid 15px powderblue;
+  border-radius: 100%;
+  width: 90%;
+  margin-bottom: 5px;
+}
+
+.recipecontainer {
+  padding-top: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.space {
+  margin: 100px;
+}
+
+.simon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  animation: color 3s infinite alternate;
+  width: 150px;
+}
+
+@keyframes color {
+  from {
+  }
+  to {
+    background-color: rgb(20, 207, 231);
+    color: hotpink;
+  }
 }

@@ -3,33 +3,34 @@
         <h2>
             <%= recipe.recipeName %>
         </h2>
-        <p>Cooking Time:
+        <p><span class="bold">Cooking Time:</span>
             <%= recipe.cookingTime %>
+                <span class="bold">Prep Time:</span>
+                <%= recipe.prepTime %>
         </p>
-        <p>Prep Time:
-            <%= recipe.prepTime %>
-        </p>
-        <p>Ingredients:</p>
+        <p class="bold">Ingredients:</p>
         <% recipe.ingredients.forEach(ingredient => { %>
             <ul>
                 <li>
                     <a href="/recipe/<%= recipe.id %>/ingredients/<%= ingredient.id %>">
                         <%= ingredient.ingredientName %>
+                            <%= ingredient.amount %>
                     </a>
-                    <%= ingredient.amount %>
                 </li>
             </ul>
             <% }) %>
-                <p>Instructions:
+                <p class="instructions"><span class="bold">Instructions:</span>
                     <%= recipe.instructions %>
                 </p>
     </div>
-    <p>
-        <a href="/recipe/<%= recipe.id %>/ingredients/new">Add Ingredients</a>
-    </p>
-    <p>
-        <a class="edit" href="/edit/<%= recipe.id %>"> Edit Recipe </a>
-    </p>
+    <div class="edit">
+        <p>
+            <a class="submit" href="/recipe/<%= recipe.id %>/ingredients/new">Add Ingredients</a>
+        </p>
+        <p>
+            <a class="edit submit" href="/edit/<%= recipe.id %>"> Edit Recipe </a>
+        </p>
+    </div>
 
 
-<%- include('../partials/footer.ejs') %>
+    <%- include('../partials/footer.ejs') %>

@@ -1,17 +1,20 @@
 <%- include('../partials/header.ejs') %>
-    <div class="recipe-card">
-        <% recipes.forEach((recipe) => { %>
-            <ul>
-                <li>
-                    <a href="/recipe/<%= recipe.id %>">
-                        Recipe name:
-                        <%= recipe.recipeName %>
-                    </a>
-                </li>
-            </ul>
-            <% }) %>
-                <p>
-                    <a href="/recipes/new">Add a Recipe</a>
-                </p>
+    <div class="chocolatecake">
+        <div class="recipecontainer">
+            <h2>Recipes</h2>
+            <% recipes.forEach((recipe) => { %>
+                <ul>
+                    <li class="recipes">
+                        <a href="/recipe/<%= recipe.id %>">
+                            Recipe name:
+                            <%= recipe.recipeName %>
+                        </a>
+                    </li>
+                </ul>
+                <% }) %>
+                    <p class="space">
+                        <a class="submit" href="/recipes/new">Add a Recipe</a>
+                    </p>
+        </div>
     </div>
 <%- include('../partials/footer.ejs') %>

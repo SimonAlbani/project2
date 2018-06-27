@@ -20,6 +20,11 @@
     "recipeId": 2
   },
   {
+    "ingredientName": "butter",
+    "amount": "4 sticks",
+    "recipeId": 2
+  },
+  {
     "ingredientName": "sour cream",
     "amount": "3 cups",
     "recipeId": 2
