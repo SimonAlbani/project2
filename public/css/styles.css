@@ -195,4 +195,9 @@ header {
       background-color: lightgreen;
       max-width: 480px;
   }
+
+  .chocolatecake, .recipe-card {
+    background-image: none;
+  }
+  
 }
