@@ -3,7 +3,8 @@
         <h2>
             <%= recipe.recipeName %>
         </h2>
-        <p><span class="bold">Cooking Time:</span>
+        <p>
+            <span class="bold">Cooking Time:</span>
             <%= recipe.cookingTime %>
                 <span class="bold">Prep Time:</span>
                 <%= recipe.prepTime %>
@@ -19,7 +20,8 @@
                 </li>
             </ul>
             <% }) %>
-                <p class="instructions"><span class="bold">Instructions:</span>
+                <p class="instructions">
+                    <span class="bold">Instructions:</span>
                     <%= recipe.instructions %>
                 </p>
     </div>
@@ -31,6 +33,4 @@
             <a class="edit submit" href="/edit/<%= recipe.id %>"> Edit Recipe </a>
         </p>
     </div>
-
-
-    <%- include('../partials/footer.ejs') %>
+<%- include('../partials/footer.ejs') %>
