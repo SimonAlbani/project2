@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-  color: hotpink;
+  color: rgb(20, 171, 231);
 }
 
 .chocolatecake,
@@ -36,11 +36,13 @@ a:hover {
 
 ul {
   list-style: inside;
+  padding-left: 0;
 }
 
 li {
   font-size: 15px;
   margin: -8px;
+  padding-left: 0;
 }
 
 h2 {
@@ -52,8 +54,11 @@ footer {
   padding: 20px;
   font-size: 25px;
   word-spacing: 3.5px;
-  border-top: solid powderblue 6px;
+  border-top: solid rgb(20, 207, 231) 6px;
   width: 100%;
+  background-color: powderblue;
+  bottom: 0;
+  padding-bottom: 15px;
 }
 
 .edit {
@@ -76,10 +81,24 @@ input,
   font-family: "Galada", cursive;
 }
 
+textarea,
 input,
 .submit:hover {
   border: solid 6px hotpink;
   background-color: powderblue;
+}
+
+textarea {
+  width: 500px;
+  height: 150px;
+  font-family: "Galada", cursive;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .recipes {
@@ -103,6 +122,7 @@ header {
 
 .recipecontainer {
   padding-top: 20px;
+  padding-left: 0;
 }
 
 .bold {
@@ -127,9 +147,144 @@ header {
 
 @keyframes color {
   from {
+    border: rgb(20, 207, 231);
   }
   to {
     background-color: rgb(20, 207, 231);
     color: hotpink;
+    border: hotpink;
+  }
+}
+
+@keyframes r {
+  from {
+    color: rgba(255, 0, 0, 0.1);
+  }
+  to {
+    color: rgba(255, 0, 0, 1);
+  }
+}
+
+.r {
+  animation: r 3s infinite alternate;
+}
+
+@keyframes o {
+  from {
+    color: rgba(255, 165, 0, 0.1);
+  }
+  to {
+    color: rgba(255, 165, 0, 1);
+  }
+}
+
+.o {
+  animation: o 2s infinite alternate;
+}
+
+@keyframes y {
+  from {
+    color: rgba(255, 255, 0, 0.1);
+  }
+  to {
+    color: rgba(255, 255, 0, 1);
+  }
+}
+
+.y {
+  animation: y 1s infinite alternate;
+}
+
+@keyframes g {
+  from {
+    color: rgba(0, 128, 0, 0.1);
+  }
+  to {
+    color: rgba(0, 128, 0, 1);
+  }
+}
+
+.g {
+  animation: g 1.5s infinite alternate;
+}
+
+@keyframes b {
+  from {
+    color: rgba(0, 0, 255, 0.1);
+  }
+  to {
+    color: rgba(0, 0, 255, 1);
+  }
+}
+
+.b {
+  animation: b 2.5s infinite alternate;
+}
+
+@keyframes i {
+  from {
+    color: rgba(75, 0, 130, 0.1);
+  }
+  to {
+    color: rgba(75, 0, 130, 1);
+  }
+}
+
+.i {
+  animation: i 0.5s infinite alternate;
+}
+
+@keyframes v {
+  from {
+    color: rgba(238, 130, 238, 0.1);
+  }
+  to {
+    color: rgba(238, 130, 238, 1);
+  }
+}
+
+.v {
+  animation: v 2.7s infinite alternate;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    max-width: 480px;
+  }
+
+  .chocolatecake,
+  .recipe-card {
+    background-image: none;
+  }
+
+  header {
+    font-size: 26px;
+    width: auto;
+    background-color: lightgreen;
+  }
+
+  .chocolatecake,
+  .recipe-card {
+    width: 480px;
+  }
+
+  li,
+  footer,
+  .recipes {
+    font-size: 25px;
+  }
+
+  h2 {
+    padding-top: 50px;
+    font-size: 50px;
+  }
+
+  footer {
+    word-spacing: 1px;
+    width: 480px;
+  }
+
+  a:hover {
+    color: lightgreen;
   }
 }
