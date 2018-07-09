@@ -10,6 +10,7 @@
         </p>
         <p class="bold">Ingredients:</p>
         <% recipe.ingredients.forEach(ingredient => { %>
+            // make sure this is indented properly!
             <ul>
                 <li>
                     <a href="/recipe/<%= recipe.id %>/ingredients/<%= ingredient.id %>">

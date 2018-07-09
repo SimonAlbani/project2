@@ -31,6 +31,7 @@ router.get("/recipe/:id", (req, res) => {
   });
 });
 
+// be consistent with key: value vs value notation { recipe } vs { recipe: recipe }
 router.get("/edit/:id", (req, res) => {
   Recipe.findById(req.params.id).then(recipe => {
     res.render("recipes/edit", {
@@ -39,7 +40,9 @@ router.get("/edit/:id", (req, res) => {
   });
 });
 
+
 router.put("/recipe/:id", (req, res) => {
+  // you don't have a complete field on your recipe. this isn't doing anything.
   req.body.complete = req.body.complete ? true : false;
   Recipe.findById(req.params.id)
     .then(recipe => {
