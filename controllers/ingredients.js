@@ -18,6 +18,7 @@ router.post("/recipe/:recipeId", (req, res) => {
   });
 });
 
+// calling both :id won't work. One needs to be named something else so that you can access both variables.
 router.get("/recipe/:id/ingredients/:id", (req, res) => {
   Ingredient.findById(req.params.id, queryOptions).then(ingredient => {
     res.render("ingredients/show", { ingredient });
@@ -30,9 +31,11 @@ router.get("/recipe/:id/ingredients/:id/edit", (req, res) => {
   });
 });
 
+// would camel case recipeid
 router.put("/recipe/:recipeid/ingredients/:id", (req, res) => {
   Ingredient.findById(req.params.id, queryOptions)
     .then(ingredient => {
+      // you aren't using the recipeId variable.
       recipeId = req.params.recipeId;
       return ingredient.updateAttributes(req.body);
     })
@@ -41,6 +44,7 @@ router.put("/recipe/:recipeid/ingredients/:id", (req, res) => {
     });
 });
 
+// would camel case recipeid
 router.delete("/recipe/:recipeid/ingredients/:id", (req, res) => {
   Ingredient.findById(req.params.id, queryOptions)
     .then(ingredient => {

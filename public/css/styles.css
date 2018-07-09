@@ -145,6 +145,7 @@ header {
   width: 150px;
 }
 
+/* I would probably write the color names out here! */
 @keyframes color {
   from {
     border: rgb(20, 207, 231);

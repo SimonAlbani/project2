@@ -1,4 +1,4 @@
-#WDI Project 2
+# WDI Project 2
 https://thawing-crag-57691.herokuapp.com/
 ![alt text](public/images/Capture2.PNG)
 

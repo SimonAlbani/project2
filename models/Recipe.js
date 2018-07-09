@@ -1,3 +1,4 @@
+// this export should be an anonymous function!
 module.exports = function recipeModel(sequelize, DataTypes) {
   return sequelize.define("recipe", {
     recipeName: DataTypes.STRING,
